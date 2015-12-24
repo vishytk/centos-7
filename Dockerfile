@@ -13,12 +13,3 @@ rm -f /lib/systemd/system/basic.target.wants/*;\
 rm -f /lib/systemd/system/anaconda.target.wants/*;
 VOLUME [ "/sys/fs/cgroup" ]
 CMD ["/usr/sbin/init"]
-
-
-#RUN rm -f /etc/bashrc
-
-#ADD files/color_prompt /etc/color_prompt
-#ADD files/bashrc /etc/bashrc
-#ADD files/.bashrc /root/.bashrc
-#ADD files/.bash_profile /root/.bash_profile
-
