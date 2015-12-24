@@ -1,0 +1,37 @@
+#!/bin/bash
+
+if [ $TERM = linux ]; then
+	export BLACK='\[\e[30m\]'
+	export GREY='\[\e[1;37m\]'
+	export RED='\[\e[1;31m\]'
+	export GREEN='\[\e[1;32m\]'
+	export YELLOW='\[\e[1;33m\]'
+	export BLUE='\[\e[1;34m\]'
+	export MAGENTA='\[\e[1;35m\]'
+	export CYAN='\[\e[1;36m\]'
+	export CYAN2='\[\e[2;48m\]'
+	export WHITE='\[\e[1;37m\]'
+	export CLEAR='\[\e[0m\]'
+#	export PS1="$GREEN\u$CYAN on$YELLOW \H$BLUE | $GREY\d $RED\t$BLUE | $MAGENTA\w$BLUE |\n$GREEN\\$ $CYAN-> $CLEAR"
+	export PS1="$GREEN\u$CYAN on$YELLOW \H$BLUE | $GREY\d $RED\t$BLUE | $MAGENTA\w$BLUE |\n$RED❯$YELLOW❯$GREEN❯ $CLEAR"
+	export PS2="$GREY '>'$CLEAR"
+	export PS3="$GREY '>>'$CLEAR"
+	export PS4="$GREY '>>>'$CLEAR"
+else
+	export BLACK='\[\e[30m\]'
+	export GREY='\[\e[1;30m\]'
+	export RED='\[\e[2;31m\]'
+	export GREEN='\[\e[2;32m\]'
+	export YELLOW='\[\e[2;33m\]'
+	export BLUE='\[\e[2;34m\]'
+	export MAGENTA='\[\e[2;35m\]'
+	export CYAN='\[\e[2;36m\]'
+	export CYAN2='\[\e[2;48m\]'
+	export WHITE='\[\e[2;37m\]'
+	export CLEAR='\[\e[0m\]'
+	export PS1="$GREEN\u$CYAN on$YELLOW \H$BLUE | $GREY\d $RED\t$BLUE | $MAGENTA\w$BLUE |\n$GREEN\\$ $CYAN-> $CLEAR"
+#	export PS1="$GREEN\u$CYAN on$YELLOW \H$BLUE | $GREY\d $RED\t$BLUE | $MAGENTA\w$BLUE |\n$RED❯$YELLOW❯$GREEN❯ $CLEAR"
+	export PS2="$GREY '>'$CLEAR"
+	export PS3="$GREY '>>'$CLEAR"
+	export PS4="$GREY '>>>'$CLEAR"
+fi
